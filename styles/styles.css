@@ -1,0 +1,169 @@
+/* ========== General Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #596f62;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ========== Hero Section ========== */
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* ========== Adventure Intro ========== */
+.adventure {
+  margin: 2rem 0;
+}
+
+.adventure h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.adventure p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #596f62;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #7f998b;
+}
+
+/* ========== Cards ========== */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+}
+
+.card img {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.icon {
+  position: absolute;
+  right: -25px;
+  bottom: 25px;
+  width: 40px;
+  opacity: 0.8;
+}
+
+/* ========== Info Section ========== */
+.info-section {
+  background-color: #d3b791;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ========== Footer Image ========== */
+.footer-image img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #596f62;
+  color: white;
+  padding: 2rem;
+}
+
+footer h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .join {
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+.social img {
+  width: 30px;
+  margin: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
