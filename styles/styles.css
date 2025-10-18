@@ -94,9 +94,119 @@ nav a:hover {
 }
 
 .card {
-  positio
-or: #ffd700;
+  position: relative;
+  text-align: center;
 }
+
+.card-img {
+  width: 400px;
+  border-radius: 8px;
+  border: 10px solid #d9c2a3;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+/* ========= Icon (bottom-right corner) ========= */
+.icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 55px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ========= Message Section ========= */
+.msg {
+  background-color: #6f7364;
+  line-height: 1.5em;
+  padding: 35px;
+  color: white;
+}
+
+.msg p {
+  padding-bottom: 15px;
+}
+
+/* ========= Info Section (Spacing Example) ========= */
+.spacing-example {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f7f5ef;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.highlight-text {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #e8f0ed;
+  border-left: 4px solid #596f62;
+}
+
+/* ========= Footer ========= */
+footer {
+  background-color: #596f62;
+  color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+footer .social img {
+  width: 30px;
+  margin: 0.5rem;
+  padding-top: 15px;
+  transition: transform 0.3s;
+}
+
+footer .social img:hover {
+  transform: scale(1.2);
+}
+
+/* ========= Responsive Adjustments ========= */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card-img {
+    width: 300px;
+  }
+
+  .icon {
+    width: 45px;
+  }
+}
+
 
 
 
