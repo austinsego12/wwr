@@ -1,25 +1,37 @@
-/* ========== General Reset ========== */
-* {
+/* ========= Font Imports ========= */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Raleway:wght@400;600&display=swap');
+
+/* ========= Simple Reset ========= */
+body {
+  background-color: #fcfbfb;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background-color: #fff;
   color: #333;
   text-align: center;
   line-height: 1.6;
 }
 
-/* ========== Header ========== */
+h2 {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+}
+
+/* ========= Header ========= */
 header {
   background-color: #596f62;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+}
+
+#logo_link {
+  padding-top: 5px;
 }
 
 .logo {
@@ -32,48 +44,47 @@ nav a {
   margin-left: 1rem;
   font-weight: bold;
   transition: color 0.3s;
+  padding: 35px;
 }
 
 nav a:hover {
   color: #ffd700;
 }
 
-/* ========== Hero Section ========== */
+/* ========= Hero Section ========= */
 .hero img {
   width: 100%;
   display: block;
   height: auto;
+  box-sizing: border-box;
 }
 
-/* ========== Adventure Intro ========== */
-.adventure {
-  margin: 2rem 0;
+/* ========= Home Title ========= */
+.home-title {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
-.adventure h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.adventure p {
-  margin-bottom: 1rem;
-}
-
-.btn {
-  background-color: #596f62;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 4px;
+/* ========= Buttons ========= */
+.book, .join {
+  background-color: #d9c2a3;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn:hover {
-  background-color: #7f998b;
+.book:hover, .join:hover {
+  background-color: #e6d2b5;
+  transform: scale(1.05);
 }
 
-/* ========== Cards ========== */
+/* ========= Cards ========= */
 .cards {
   display: flex;
   flex-direction: column;
@@ -87,49 +98,71 @@ nav a:hover {
   text-align: center;
 }
 
-.card img {
+.card-img {
   width: 400px;
   border-radius: 8px;
+  border: 10px solid #d9c2a3;
+  box-sizing: border-box;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.card h2 {
-  font-weight: bold;
-  margin-top: 0.8rem;
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
 }
 
+/* ========= Icon (bottom-right corner) ========= */
 .icon {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 60px;
-  opacity: 0.8;
+  bottom: 8px;
+  right: 8px;
+  width: 55px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ========== Info Section ========== */
-.info-section {
-  background-color: #d3b791;
-  padding: 4rem 2rem;
-  font-size: 1.2rem;
-  color: #333;
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
-/* ========== Footer Image ========== */
-.footer-image img {
-  width: 100%;
-  display: block;
-  margin: 0;
+/* ========= Message Section ========= */
+.msg {
+  background-color: #6f7364;
+  line-height: 1.5em;
+  padding: 35px;
+  color: white;
 }
 
-/* ========== Footer ========== */
+.msg p {
+  padding-bottom: 15px;
+}
+
+/* ========= Info Section (Spacing Example) ========= */
+.spacing-example {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f7f5ef;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.highlight-text {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #e8f0ed;
+  border-left: 4px solid #596f62;
+}
+
+/* ========= Footer ========= */
 footer {
   background-color: #596f62;
   color: white;
-  padding: 2rem;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer h2 {
-  margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -137,14 +170,15 @@ footer p {
   margin-bottom: 1rem;
 }
 
-footer .join {
-  color: #ffd700;
-  font-weight: bold;
-  text-decoration: none;
+footer .social img {
+  width: 30px;
+  margin: 0.5rem;
+  padding-top: 15px;
+  transition: transform 0.3s;
 }
 
-.footer-links {
-  margin-top: 1rem;
+footer .social img:hover {
+  transform: scale(1.2);
 }
 
 .footer-links a {
@@ -157,15 +191,22 @@ footer .join {
   color: #ffd700;
 }
 
-.social img {
-  width: 30px;
-  margin: 0.5rem;
-  transition: transform 0.3s;
+/* ========= Responsive Adjustments ========= */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card-img {
+    width: 300px;
+  }
+
+  .icon {
+    width: 45px;
+  }
 }
 
-.social img:hover {
-  transform: scale(1.2);
-}
 
 
 
