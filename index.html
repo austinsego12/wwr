@@ -1,96 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dry Oar Rafting Co.</title>
-
-  <!-- CSS link -->
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
     <a id="logo_link" href="index.html">
       <img class="logo" src="images/logo.png" alt="Dry Oar Logo" />
     </a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="page2.html">Page 2</a>
+      <a href="#">Page 2</a>
       <a href="site-plan-rafting.html">Site Plan</a>
       <a href="contactus.html">Contact Us</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Image -->
-    <div class="hero">
-      <img src="images/hero.png" alt="Rafting on a wild river" />
+  <!-- HERO SECTION -->
+  <div id="hero">
+    <div id="hero-box">
+      <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting" />
     </div>
-
-    <!-- Adventure Intro -->
-    <section class="adventure">
+    <section id="hero-msg">
       <h1 class="home-title">Have An Adventure</h1>
-      <p>Make Memories with Dry Oar</p>
-      <a class="btn join" href="contactus.html">Book Now</a>
-    </section>
-
-    <!-- Adventure Cards -->
-    <section class="cards">
-      <div class="card">
-        <img class="card-img" src="images/rivers.jpg" alt="Beautiful River" />
-        <h2>Rivers</h2>
-        <img class="icon" src="images/river_icon.png" alt="River Icon" />
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="images/camping.jpg" alt="Mountain Camping" />
-        <h2>Camping</h2>
-        <img class="icon" src="images/fire_icon.png" alt="Campfire Icon" />
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="images/rapids.jpg" alt="Rafting Rapids" />
-        <h2>Rapids</h2>
-        <img class="icon" src="images/oars.png" alt="Paddles Icon" />
+      <h4>Make Memories with Dry Oar</h4>
+      <div class="button-box">
+        <a class="book" href="contactus.html">Book Now</a>
       </div>
     </section>
+  </div>
 
-    <!-- Message Section -->
+  <!-- MAIN GRID -->
+  <main class="home-grid">
+    <section class="rivers-card">
+      <img class="card-img" src="images/rivers.jpg" alt="river in forest" />
+      <img class="icon" src="images/river_icon.png" alt="river icon" />
+      <h2>Rivers</h2>
+    </section>
+
+    <section class="camping-card">
+      <img class="card-img" src="images/camping.jpg" alt="tent in mountains" />
+      <img class="icon" src="images/fire_icon.png" alt="fire icon" />
+      <h2>Camping</h2>
+    </section>
+
+    <section class="rapids-card">
+      <img class="card-img" src="images/rapids.jpg" alt="rafting boat" />
+      <img class="icon" src="images/oars.png" alt="oars icon" />
+      <h2>Rapids</h2>
+    </section>
+
+    <div id="background"></div>
+    <img class="mountains" src="images/mountains.jpg" alt="Misty mountains" />
+
     <section class="msg">
-      <p>Your next great outdoor experience awaits — explore the thrill of the rapids, the peace of the forest, and the adventure that only Dry Oar can offer.</p>
-    </section>
-
-    <!-- Margin & Padding Example -->
-    <section class="spacing-example">
-      <p class="highlight-text">
-        Dry Oar Rafting Co. values comfort and space — that’s why we make room
-        for memories on and off the river!
+      <h2>More Than Just The Thrill</h2>
+      <p>
+        Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; 
+        it's way more than just the rapids. Relax and enjoy all the beauty of the great outdoors.
       </p>
-    </section>
-
-    <!-- Mountain Scenic Section -->
-    <section class="footer-image">
-      <img src="images/mountains.jpg" alt="Mountain Landscape" />
+      <a class="join" href="contactus.html">Join Us</a>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <h2>More Than Just The Thrill</h2>
-    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks, it’s way more than just the rapids. Relax and enjoy all the beauty of the great outdoors.</p>
-    <a class="book join" href="contactus.html">Join Us</a>
-
-    <div class="footer-links">
-      <p>Dry Oar © 2025 - Austin Sego</p>
-      <a href="site-plan-rafting.html">Site Plan</a>
-      <a href="contactus.html">Contact Us</a>
-    </div>
-
+    <p>Dry Oar © 2025 - Austin Sego</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
     <div class="social">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.png" alt="fb icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="twitter icon"></a>
+      <a href="#"><img src="images/instagram.png" alt="instagram icon"></a>
     </div>
   </footer>
 </body>

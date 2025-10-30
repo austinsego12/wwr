@@ -1,211 +1,182 @@
-/* ========= Font Imports ========= */
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Raleway:wght@400;600&display=swap');
-
-/* ========= Simple Reset ========= */
+/* ===== BASIC RESET ===== */
 body {
-  background-color: #fcfbfb;
-  font-family: 'Raleway', Arial, sans-serif;
-  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  text-align: center;
-  line-height: 1.6;
 }
 
-h2 {
-  margin: 0;
-}
-
-h1, h2, h3 {
-  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-}
-
-/* ========= Header ========= */
+/* ===== HEADER GRID ===== */
 header {
-  background-color: #596f62;
-  display: flex;
+  background-color: rgba(57, 110, 148, 0.9);
+  display: grid;
+  grid-template-columns: 150px auto;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
 }
-
 #logo_link {
   padding-top: 5px;
+  justify-self: center;
+  align-self: center;
 }
-
-.logo {
-  height: 60px;
-}
-
-nav a {
-  color: #fcfbfb;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  transition: color 0.3s;
-  padding: 35px;
-}
-
-nav a:hover {
-  color: #ffd700;
-}
-
-/* ========= Hero Section ========= */
-.hero img {
-  width: 100%;
-  display: block;
-  height: auto;
-  box-sizing: border-box;
-}
-
-/* ========= Home Title ========= */
-.home-title {
-  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-/* ========= Buttons ========= */
-.book, .join {
-  background-color: #d9c2a3;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-  display: inline-block;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.book:hover, .join:hover {
-  background-color: #e6d2b5;
-  transform: scale(1.05);
-}
-
-/* ========= Cards Section ========= */
-.cards {
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.1em;
+}
+nav a:hover {
+  background-color: #a43312;
+  border-radius: 5px;
 }
 
-.card {
-  position: relative;
+/* ===== HERO GRID ===== */
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#hero-img {
+  width: 100%;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
   text-align: center;
 }
-
-.card-img {
-  width: 400px;
-  border-radius: 8px;
-  border: 10px solid #d9c2a3;
-  box-sizing: border-box;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+#hero-msg h1, #hero-msg h4 {
+  color: white;
+}
+.button-box .book {
+  text-decoration: none;
+  background-color: #e7c24f;
+  color: #381d2a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-.rivers-card, .camping-card, .rapids-card {
-  margin: 200px 0;
+/* ===== MAIN GRID ===== */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.card-img, .mountains {
+  width: 100%;
 }
 
-/* ========= Icon Placement ========= */
-.icon {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 40px;          /* smaller size like your screenshot */
-  opacity: 0.8;
-  padding-top: 10px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+/* Card Placement */
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
-
-.icon:hover {
-  transform: scale(1.1);
-  opacity: 1;
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
 }
-
-/* ========= Message Section ========= */
+.rapids-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+#background {
+  grid-column: 1/11;
+  grid-row: 4/9;
+  background-color: #aabd8c;
+}
+.mountains {
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px #6f7364;
+}
 .msg {
   background-color: #6f7364;
-  color: white;
   padding: 35px;
-  line-height: 1.5em;
-}
-
-.msg p {
-  font-size: 0.8em;
-  padding-bottom: 15px;
-}
-
-/* ========= Spacing Example ========= */
-.spacing-example {
-  margin: 30px auto;
-  padding: 20px;
-  max-width: 600px;
-  background-color: #f7f5ef;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.highlight-text {
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #e8f0ed;
-  border-left: 4px solid #596f62;
-}
-
-/* ========= Footer ========= */
-footer {
-  background-color: #596f62;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #6f7364;
   color: white;
+}
+
+/* ===== ENHANCEMENTS ===== */
+.card-img {
+  border: 10px solid #d9c2a3;
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #6f7364;
   padding: 25px 50px;
   margin-top: 200px;
-}
-
-footer h2 {
-  font-size: 1.5rem;
-}
-
-footer p {
-  margin-bottom: 1rem;
-}
-
-.footer-links a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: white;
-  margin: 0 0.5rem;
+}
+footer a {
+  color: white;
   text-decoration: none;
 }
-
-.footer-links a:hover {
-  color: #ffd700;
+footer a:hover {
+  color: #e7c24f;
 }
-
-footer .social img {
+.social img {
   width: 30px;
-  margin: 0.5rem;
-  padding-top: 15px;
-  transition: transform 0.3s;
+  margin: 0 10px;
 }
 
-footer .social img:hover {
-  transform: scale(1.2);
-}
-
-/* ========= Responsive Layout ========= */
-@media (min-width: 768px) {
-  .cards {
-    flex-direction: row;
-    justify-content: center;
+/* ===== MEDIA QUERY ===== */
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+    display: block;
+    height: auto;
   }
-
-  .card-img {
-    width: 300px;
+  nav, footer {
+    flex-direction: column;
   }
-
-  .icon {
-    width: 35px;
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero, #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  }
+  #hero-msg h1 {
+    color: #6f7364;
+  }
+  .home-title {
+    font-size: 25px;
+  }
+  .rivers-card, .camping-card, .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains, .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 25px;
   }
 }
 
