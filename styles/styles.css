@@ -14,10 +14,12 @@ header {
   text-align: center;
   padding: 20px;
 }
+
 header h1 {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 8px;
 }
+
 header h2 {
   font-weight: normal;
   margin: 2px;
@@ -31,12 +33,14 @@ nav {
   background-color: #396e94;
   margin-top: 10px;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   padding: 15px 20px;
   font-weight: bold;
 }
+
 nav a:hover,
 nav a.active {
   background-color: #e7c24f;
@@ -49,32 +53,36 @@ nav a.active {
   background: none;
   margin: 10px 0;
 }
+
 .inline-nav a {
   color: #396e94;
   font-weight: 600;
 }
+
 .inline-nav a:hover {
   color: #a43312;
 }
 
-/* ===== TABLE STYLES ===== */
+/* ===== COLOR TABLE ===== */
 .colors {
   border-collapse: collapse;
   margin: 20px 0;
   width: 100%;
   max-width: 600px;
 }
+
 .colors th, .colors td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
+
 .colors .primary { background-color: #396e94; color: white; }
 .colors .secondary { background-color: #e7c24f; }
 .colors .accent1 { background-color: #a43312; color: white; }
 .colors .accent2 { background-color: #aabd8c; }
 
-/* ===== WIREFRAME IMAGES ===== */
+/* ===== WIREFRAMES ===== */
 main img {
   display: block;
   margin: 25px auto;
@@ -103,6 +111,7 @@ footer {
     padding: 10px;
   }
 }
+
 
 
 
