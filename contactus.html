@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Wade in the Water Rafting Company</title>
-    <meta name="description" content="Contact us to book your next adventure!">
+    <title>Contact Us - Dry Oar Rafting Co.</title>
+    <meta name="description" content="Contact Dry Oar Rafting Company">
     <meta name="author" content="Austin Sego">
 
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- Feedback message styles -->
+    <!-- Form Success Message Styles -->
     <style>
         #feedback {
             background-color: antiquewhite;
@@ -29,105 +29,177 @@
         .moveDown {
             margin-top: 3em;
         }
+
+        /* Simple contact page layout */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+
+        fieldset {
+            border: 2px solid var(--primary-color);
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            background-color: white;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-family: var(--heading-font);
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: .6rem;
+            margin-top: .3rem;
+            border: 2px solid var(--accent2-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: var(--paragraph-font);
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: #222;
+            padding: .8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: var(--accent1-color);
+            color: white;
+        }
+
+        .adventure {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .adventure figure {
+            width: 180px;
+            text-align: center;
+        }
+
+        .adventure img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
+        <a id="logo_link" href="index.html">
+            <img src="images/logo.png" alt="Dry Oar Logo">
+        </a>
         <nav>
-            <img src="images/raftinglogo.png" alt="Rafting Logo">
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="page2.html">Page 2</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html" class="active">Contact Us</a>
         </nav>
     </header>
 
+    <!-- SUCCESS MESSAGE -->
+    <div id="feedback"></div>
+
     <main>
 
-        <!-- FEEDBACK BOX (required for rubric) -->
-        <div id="feedback"></div>
-
-        <div class="hero">
-            <img src="images/homepagerafting.jpg" alt="People Water Rafting">
-            <h1>Wade In the Water Rafting Company</h1>
-        </div>
-
-        <!-- BUSINESS INFO -->
-        <section>
-            <fieldset>
-                <legend>Wade in the Water Rafting Company Contact Information</legend>
-
-                <p><strong>Mailing Address:</strong> 555 Water Road, Fort Myers Florida 666333</p>
-                <p><strong>Phone Number:</strong> 636-555-2875</p>
-                <p><strong>Email:</strong> WadeInTheWater.org</p>
-            </fieldset>
-
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d322903.45776610327!2d-82.03841392297416!3d26.596794876799073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d26.67254195534343!2d-81.76251759689126!5e0!3m2!1sen!2sus!4v1711730377150!5m2!1sen!2sus"
-                    width="600" height="450" allowfullscreen loading="lazy"></iframe>
-            </div>
-
-            <h2>Adventure Awaits You!</h2>
-
-            <div class="adventure">
-                <figure>
-                    <img src="images/happyemployee1.jpg" alt="Thumbs Up!">
-                    <figcaption>Thumbs Up!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happyemployee2.jpg" alt="We're a team!">
-                    <figcaption>We're a team!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happyemployee3.jpg" alt="Always Winning!">
-                    <figcaption>Always Winning!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happyemployee4.jpg" alt="Success!">
-                    <figcaption>Success!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happyemployee5.jpg" alt="Jumping for Joy!">
-                    <figcaption>Jumping for Joy!</figcaption>
-                </figure>
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/hero.png" alt="People Water Rafting">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>We would love to hear from you!</p>
             </div>
         </section>
 
-        <!-- USER CONTACT FORM (MDN tutorial form) -->
+        <!-- CONTACT INFO -->
+        <fieldset>
+            <legend>Dry Oar Rafting Company Contact Information</legend>
+            <p><strong>Mailing Address:</strong> 555 Water Road, Fort Myers Florida 666333</p>
+            <p><strong>Phone Number:</strong> 636-555-2875</p>
+            <p><strong>Email:</strong> info@DryOar.com</p>
+        </fieldset>
+
+        <!-- ADVENTURE PHOTOS (using YOUR downloaded images) -->
+        <h2>Adventure Awaits You!</h2>
+
+        <div class="adventure">
+
+            <figure>
+                <img src="images/happyemployee1.jpg" alt="Thumbs Up!">
+                <figcaption>Thumbs Up!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/happyemployee2.jpg" alt="We're a team!">
+                <figcaption>We're a team!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/happyemployee3.jpg" alt="Always Winning!">
+                <figcaption>Always Winning!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/happyemployee4.jpg" alt="Success!">
+                <figcaption>Success!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/happyemployee5.jpg" alt="Jumping for Joy!">
+                <figcaption>Jumping for Joy!</figcaption>
+            </figure>
+
+        </div>
+
+        <!-- USER MESSAGE FORM (MDN TUTORIAL FORM) -->
         <form>
             <fieldset>
                 <legend>Send Us a Message</legend>
 
-                <div class="form-item column2">
-                    <label for="user_name">First and Last Name:</label>
-                    <input type="text" id="user_name" name="user_name" required>
-                </div>
+                <label for="user_name">First and Last Name:</label>
+                <input type="text" id="user_name" name="user_name" required>
 
-                <div class="form-item column2">
-                    <label for="user_email">Email:</label>
-                    <input type="email" id="user_email" name="user_email" required>
-                </div>
+                <label for="user_email">Email:</label>
+                <input type="email" id="user_email" name="user_email" required>
 
                 <p><strong>What is your inquiry about?</strong></p>
 
-                <input type="radio" id="option1" name="category" value="General Inquiry">
-                <label for="option1">General Inquiry</label><br>
-
-                <input type="radio" id="option2" name="category" value="Reservation Question">
-                <label for="option2">Reservation Question</label><br>
-
-                <input type="radio" id="option3" name="category" value="Website Suggestion">
-                <label for="option3">Website Suggestion</label><br><br>
+                <label><input type="radio" name="category" value="General Inquiry"> General Inquiry</label>
+                <label><input type="radio" name="category" value="Reservation Question"> Reservation Question</label>
+                <label><input type="radio" name="category" value="Website Suggestion"> Website Suggestion</label>
 
                 <label for="user_message">Message:</label>
-                <textarea id="user_message" name="user_message" rows="4" placeholder="How can we help?" required></textarea><br><br>
+                <textarea id="user_message" name="user_message" rows="4"
+                    placeholder="How can we help?" required></textarea>
 
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe to the monthly newsletter</label>
-
+                <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to the monthly
+                    newsletter</label>
             </fieldset>
 
             <button type="submit">Send Enquiry</button>
@@ -135,35 +207,33 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>©️2024 Wade In The Water Rafting Company • Austin Sego</p>
-        <div class="socials">
-            <a href="https://facebook.com">
-                <img src="images/facebook-64.webp" alt="Facebook">
-            </a>
-            <a href="https://twitter.com/?lang=en">
-                <img src="images/X-64.webp" alt="X Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/1_Instagram_colored_svg_1-64.webp" alt="Instagram">
-            </a>
+        <p>Dry Oar © 2025 - Austin Sego</p>
+        <div class="social">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
 
-    <!-- REQUIRED JAVASCRIPT FOR FORM SUCCESS MESSAGE -->
+    <!-- JAVASCRIPT FEEDBACK MESSAGE -->
     <script>
         const feedbackElement = document.getElementById('feedback');
         const formElement = document.forms[0];
 
-        formElement.addEventListener('submit', function(e) {
+        formElement.addEventListener('submit', function (e) {
             e.preventDefault();
             feedbackElement.innerHTML =
-                'Hello ' + formElement.user_name.value +
-                '! Thank you for your message. We will get back with you as soon as possible!';
+                "Hello " + formElement.user_name.value +
+                "! Thank you for your message. We will get back with you as soon as possible!";
             feedbackElement.style.display = "block";
             document.body.classList.toggle('moveDown');
         });
     </script>
 
 </body>
+
 </html>
+
+
