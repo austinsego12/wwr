@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Wade in the Water Rafting Company</title>
+    <meta name="description" content="Contact us to book your next adventure!">
+    <meta name="author" content="Austin Sego">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Feedback message styles -->
+    <style>
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .75em;
+            display: none;
+            text-align: center;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #ccc;
+            z-index: 1000;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/raftinglogo.png" alt="Rafting Logo">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- FEEDBACK BOX (required for rubric) -->
+        <div id="feedback"></div>
+
+        <div class="hero">
+            <img src="images/homepagerafting.jpg" alt="People Water Rafting">
+            <h1>Wade In the Water Rafting Company</h1>
+        </div>
+
+        <!-- BUSINESS INFO -->
+        <section>
+            <fieldset>
+                <legend>Wade in the Water Rafting Company Contact Information</legend>
+
+                <p><strong>Mailing Address:</strong> 555 Water Road, Fort Myers Florida 666333</p>
+                <p><strong>Phone Number:</strong> 636-555-2875</p>
+                <p><strong>Email:</strong> WadeInTheWater.org</p>
+            </fieldset>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d322903.45776610327!2d-82.03841392297416!3d26.596794876799073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d26.67254195534343!2d-81.76251759689126!5e0!3m2!1sen!2sus!4v1711730377150!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen loading="lazy"></iframe>
+            </div>
+
+            <h2>Adventure Awaits You!</h2>
+
+            <div class="adventure">
+                <figure>
+                    <img src="images/happyemployee1.jpg" alt="Thumbs Up!">
+                    <figcaption>Thumbs Up!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happyemployee2.jpg" alt="We're a team!">
+                    <figcaption>We're a team!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happyemployee3.jpg" alt="Always Winning!">
+                    <figcaption>Always Winning!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happyemployee4.jpg" alt="Success!">
+                    <figcaption>Success!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happyemployee5.jpg" alt="Jumping for Joy!">
+                    <figcaption>Jumping for Joy!</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- USER CONTACT FORM (MDN tutorial form) -->
+        <form>
+            <fieldset>
+                <legend>Send Us a Message</legend>
+
+                <div class="form-item column2">
+                    <label for="user_name">First and Last Name:</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+
+                <p><strong>What is your inquiry about?</strong></p>
+
+                <input type="radio" id="option1" name="category" value="General Inquiry">
+                <label for="option1">General Inquiry</label><br>
+
+                <input type="radio" id="option2" name="category" value="Reservation Question">
+                <label for="option2">Reservation Question</label><br>
+
+                <input type="radio" id="option3" name="category" value="Website Suggestion">
+                <label for="option3">Website Suggestion</label><br><br>
+
+                <label for="user_message">Message:</label>
+                <textarea id="user_message" name="user_message" rows="4" placeholder="How can we help?" required></textarea><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe to the monthly newsletter</label>
+
+            </fieldset>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©️2024 Wade In The Water Rafting Company • Austin Sego</p>
+        <div class="socials">
+            <a href="https://facebook.com">
+                <img src="images/facebook-64.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/?lang=en">
+                <img src="images/X-64.webp" alt="X Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/1_Instagram_colored_svg_1-64.webp" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- REQUIRED JAVASCRIPT FOR FORM SUCCESS MESSAGE -->
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML =
+                'Hello ' + formElement.user_name.value +
+                '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+</body>
+</html>
